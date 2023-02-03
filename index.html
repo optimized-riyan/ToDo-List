@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet1.css">
+    <title>To Do List</title>
+</head>
+
+<body>
+    <div class="heading">
+        <h1>
+            <span style="color: rgba(247, 19, 137, 0.90);">Y</span>our 
+            <span style="color: rgba(247, 19, 137, 0.90);">T</span>o 
+            <span style="color: rgba(247, 19, 137, 0.90);">D</span>o 
+            <span style="color: rgba(247, 19, 137, 0.90);">L</span>ist
+        </h1>
+    </div>
+    <div class="center-body">
+        <div style="display: flex; justify-content: left; width: 40%;">
+            <div class="submit-task">
+                <label for="textbar" class="active-color" style="font-size: 16px;">New Task: </label>
+                <input type="text" id="textbar"><input type="button" value="Add" id="add-task-btn" onclick="addTask(this)">
+            </div>
+        </div>
+        <div class="task-list">
+            <ul>
+                <div id="list-status">
+                    The following tasks are pending...
+                </div>
+                <li class="flex-style">
+                    <div class="task-text active-color">
+                        No Nut November
+                    </div>
+                    <div>
+                        <input type="button" class="btn remove-btn" value="Remove" onclick="removeBtnClick(this)">
+                        <input type="button" class="btn done-btn" value="Done" onclick="doneBtnClk(this)">
+                    </div>
+                </li>
+                <div id="dummy"></div>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
